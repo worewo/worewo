@@ -387,6 +387,7 @@ body{
   padding: 1rem;
 }
 .effect-hor{
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -480,6 +481,7 @@ body{
   visibility: hidden;
   transform: translateY(-4rem); }
 .form{
+  border-radius: 5px;
   background-color: #FFFFFF;
   margin: 3rem;
   padding:5rem 9rem;
@@ -542,12 +544,12 @@ body{
   margin:4rem auto;
 }
 .cards{
-  border-radius: 3px;
+  border-radius: .5rem;
   padding:1rem;
   margin: 2rem;
-  background-image: linear-gradient(45deg, #dd2476 15%, #ff512f 65%);
-  border: 3px solid #000000;
-  box-shadow: 0 1rem 1.5rem #000000;
+  background-image: linear-gradient(45deg, #dd2477 15%, #ff522f 65%);
+  border: 3px solid #ffffff;
+  box-shadow: 0 .5rem 2rem #dd2476;
   display:flex;
   align-items: center;
   justify-content: center;
@@ -555,7 +557,11 @@ body{
 }
 .cards-image{
   width: 25rem;
-  height: 20rem;
+  height: 25rem;
+  border: 2px solid #000000;
+  box-shadow: 0 .5rem 2rem  rgba(0, 0, 0, 0.596);
+  border-radius: 5px;
+  background-size: 100% 100%;
 }
 .cards-text{
   width: 25rem;
@@ -570,22 +576,23 @@ body{
   margin: 2rem 1rem;
 }
 .cards-button{
-  background-color: #FFFFFF;
+  background-color:#FFFFFF;
   outline: none;
   border: none;
   padding: 1rem 3rem;
   margin: 2rem auto;
   border-radius: 1rem;
-  color:#dd2476;
-  font-size: 1.5rem;
   font-family:  'Piazzolla', serif;
   text-decoration: none;
-  box-shadow: 0 1rem 2rem #000000;
+  font-weight: 800;
+  color:#000000;
+  font-size: 1.5rem;
+  box-shadow: 0 .5rem 2rem #000000;
+  transition: all .1s;
 }
 .cards-button:hover{
-  background-color: #000000;
-  color: #FFFFFF;
-  box-shadow: 0 1rem 2rem #f5f5f5;
+  background-color: #eee;
+  transform: scale(1.1);
 }
 .share{
   color:#FFFFFF;
