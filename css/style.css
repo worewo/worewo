@@ -20,6 +20,7 @@ html{
         font-size: 75%; } }
 body{
     background-color: #f5f5f5;
+    line-height: 1.2;
 }
 .message{
   height: 100vh;
@@ -33,6 +34,37 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+.header-other{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.textanima{
+  transform: skewX(-30deg);
+  animation-name: textskew;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+@keyframes textskew{
+  0%{
+    transform: skewX(-30deg);
+  }
+  25%{
+    transform: skewX(0deg);
+  }
+  50%{
+    transform: skewX(30deg);
+  }
+  75%{
+    transform: skewX(0deg);
+  }
+  100%{
+    transform: skewX(-30deg);
+  }
 }
 .primary{
     display: block;
@@ -69,7 +101,7 @@ body{
     text-align: center;
     text-overflow: ellipsis;
     margin: 1rem;
-    margin-top:20rem;
+    margin-top:15rem;
 }
 @media (max-width: 75em) {
   .tertiary {
@@ -459,7 +491,8 @@ body{
   justify-content: center;
   flex-direction: column;
   margin:8rem auto;
-  background-image: linear-gradient(45deg, #dd2476 15%, #ff512f 65%);
+  background-image:linear-gradient(45deg, #dd2477 15%, #ff522f 65%);
+  background-size: 100% 100%;
 }
 .footer:not(:last-child){
   margin-bottom: 0;
@@ -486,6 +519,7 @@ body{
     flex-direction: column;
     width:90vw; } }
 .footer-text{
+  line-height: 1.5;
   font-size: 2rem;
   font-family:  'Piazzolla', serif;
   font-style: italic;
@@ -493,4 +527,67 @@ body{
   text-align: justify;
   text-overflow: ellipsis;
   color:#FFFFFF;
+}
+.footer-text a{
+  text-decoration: none;
+  color:#f5f5f5;
+}
+.container{
+  width: 80vw;
+  height: auto;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-around;
+  margin:4rem auto;
+}
+.cards{
+  border-radius: 3px;
+  padding:1rem;
+  margin: 2rem;
+  background-image: linear-gradient(45deg, #dd2476 15%, #ff512f 65%);
+  border: 3px solid #000000;
+  box-shadow: 0 1rem 1.5rem #000000;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cards-image{
+  width: 25rem;
+  height: 20rem;
+}
+.cards-text{
+  width: 25rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  font-family:  'Piazzolla', serif;
+  font-style: italic;
+  font-weight: 900;
+  text-align: justify;
+  text-overflow: ellipsis;
+  color:#FFFFFF;
+  margin: 2rem 1rem;
+}
+.cards-button{
+  background-color: #FFFFFF;
+  outline: none;
+  border: none;
+  padding: 1rem 3rem;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  color:#dd2476;
+  font-size: 1.5rem;
+  font-family:  'Piazzolla', serif;
+  text-decoration: none;
+  box-shadow: 0 1rem 2rem #000000;
+}
+.cards-button:hover{
+  background-color: #000000;
+  color: #FFFFFF;
+  box-shadow: 0 1rem 2rem #f5f5f5;
+}
+.share{
+  color:#FFFFFF;
+  font-size: 1.5rem;
 }
