@@ -52,7 +52,7 @@ body{
 @keyframes textskew{
   0%{
     transform: skewX(-30deg);
-  }
+  } 
   25%{
     transform: skewX(0deg);
   }
@@ -536,13 +536,14 @@ body{
   color:#f5f5f5;
 }
 .container{
-  width: 80vw;
-  height: auto;
-  display:flex;
+  /* width: 80vw; */
+  /* height: auto; */
+  /* display:flex;
   flex-wrap: wrap;
   align-items: stretch;
-  justify-content: space-around;
+  justify-content: space-around; */
   margin:4rem auto;
+  padding: 3rem;
 }
 .cards{
   border-radius: .5rem;
@@ -600,6 +601,6 @@ body{
   font-size: 1.5rem;
 }
 iframe{
-  width: 100%;
+  /* width: 100%; */
   min-height: auto;
 }

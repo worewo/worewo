@@ -8,5 +8,5 @@
     fwrite($file, $email ."\n");
     fwrite($file,"---------------------------------------------------- \n");
     fclose($file);
-    header("location: ../index.html");
+    header("location: ../thankyouonsubmission/index.html");
  ?>

@@ -1,0 +1,240 @@
+/* html basic setup margin , padding, ....etc */
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@1,500&display=swap");
+
+/* *,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+} */
+/* @media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+} */
+body {
+  background-color: #f5f5f5;
+  /* line-height: 1.2; */
+}
+
+/* WoreWo head and slide animation nd head of our services coding start*/
+
+/* worewo head */
+.header-other {
+  display: flex;
+  justify-content: center;
+}
+
+/* worewo head animation */
+.textanima {
+  transform: skewX(-30deg);
+  animation-name: textskew;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+@keyframes textskew {
+  0% {
+    transform: skewX(-30deg);
+  }
+  25% {
+    transform: skewX(0deg);
+  }
+  50% {
+    transform: skewX(30deg);
+  }
+  75% {
+    transform: skewX(0deg);
+  }
+  100% {
+    transform: skewX(-30deg);
+  }
+}
+
+/* worewo text design */
+.primary {
+  display: block;
+  font-size: 5rem;
+  background-image: linear-gradient(45deg, #dd2476 15%, #ff512f 65%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Piazzolla", serif;
+  font-style: italic;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-weight: bolder;
+}
+
+/* slider design */
+.end-design {
+  width: 20rem;
+  height: 3px;
+  background-image: linear-gradient(45deg, #dd2476 15%, #ff512f 65%);
+  margin: 1rem auto;
+  position: relative;
+}
+/* slider animation design */
+.end-design::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-image: linear-gradient(45deg, #dd2476 15%, #ff512f 65%);
+  animation-name: ball;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes ball {
+  0% {
+    transform: translateX(0rem) scale(1.5);
+  }
+  50% {
+    transform: translateX(20rem) scale(2);
+  }
+  100% {
+    transform: translateX(0rem) scale(2.5);
+  }
+}
+
+/* sub head //mod apk head, free course head, ebook head design */
+.sub-heading {
+  display: block;
+  font-size: 2rem;
+  background-image: linear-gradient(45deg, #dd2476 15%, #ff512f 65%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Piazzolla", serif;
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+  text-overflow: ellipsis;
+  margin: 2rem;
+}
+
+.content-margin {
+  margin-bottom: 4rem !important;
+}
+
+/* WoreWo head and slide animation nd head of our services coding end*/
+
+/* <---- card style start */
+
+.card {
+  /* border-radius: 0.5rem; */
+  /* padding: 1rem;
+  margin: 2rem; */
+  background-image: linear-gradient(45deg, #dd2477 15%, #ff522f 65%);
+  border: 3px solid #ffffff;
+  box-shadow: 0 0.5rem 2rem #dd2476;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+}
+
+/* <---- card style end */
+
+/* <---- card text style start */
+
+.card-body {
+  /* line-height: 1.5;
+  font-size: 1.5rem; */
+  font-family: "Piazzolla", serif;
+  font-style: italic;
+  font-weight: 900;
+  /* text-align: justify; */
+  text-overflow: ellipsis;
+  color: #ffffff;
+  /* margin: 2rem 1rem; */
+}
+
+/* <---- card text style end */
+
+/* <---- card img style start */
+
+/* .cards-image ur used class . */
+.card-img-top {
+  /* width: 25rem;
+  height: 25rem; */
+  border: 2px solid #000000;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.596);
+  /* border-radius: 5px; */
+  /* background-size: 100% 100%; */
+}
+
+/* <---- card img style end */
+
+/* <---- card button style start */
+
+/* .cards-button ur used class for button*/
+.btn-own {
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  /* padding: 1rem 3rem;
+    margin: 2rem auto; */
+  border-radius: 1rem;
+  font-family: "Piazzolla", serif;
+  text-decoration: none;
+  font-weight: 800;
+  color: #000000 !important;
+  /* font-size: 1.5rem; */
+  box-shadow: 0 0.5rem 2rem #000000;
+  transition: all 0.1s;
+}
+
+/* <---- card button style end */
+
+/* <---- card button hover style start */
+
+/* .cards-button:hover  ur used class for button*/
+.btn-own:hover {
+  background-color: #eee;
+  color: #000000 !important;
+  transform: scale(1.1);
+}
+
+/* <---- card button hover style end */
+
+/* copt footer classes */
+
+
+/* thank you page design */
+
+.thankyou {
+height: 50vh;
+
+
+}
+/* test */
+.card-container-bootom-margin:last-child {
+  color: #000000;
+  margin-bottom: 50px;
+}
+#card-container:last-child {
+  color: #000000;
+  margin-bottom: 50px;
+}
+
