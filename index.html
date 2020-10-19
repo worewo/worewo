@@ -15,6 +15,9 @@
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </head>
 <body>
+  <!-- NAVIGATION SECTION START-->
+
+
     <div class="navigation" >
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
       <label for="navi-toggle" class="navigation__button">
@@ -25,13 +28,19 @@
       <nav class="navigation__nav">
           <ul class="navigation__list">
             <li class="navigation__item"><a href="./coupons/index.html" class="navigation__link">Free Udemy Coupons</a></li>
-            <li class="navigation__item"><a href="./courses/courses.html" class="navigation__link">Free Courses</a></li>
-            <li class="navigation__item"><a href="./ebooks/ebooks.html" class="navigation__link">Free Ebooks</a></li>
-            <li class="navigation__item"><a href="./apks/apks.html" class="navigation__link">Mod APK</a></li>
+            <li class="navigation__item"><a href="./courses/index.html" class="navigation__link">Free Courses</a></li>
+            <li class="navigation__item"><a href="./ebooks/index.html" class="navigation__link">Free Ebooks</a></li>
+            <li class="navigation__item"><a href="./apks/index.html" class="navigation__link">Mod APK</a></li>
             <li class="navigation__item"><a href="#about" class="navigation__link">About Us</a></li>
           </ul>
       </nav>
     </div>
+
+    <!-- NAVIGATION SECTION END-->
+
+    <!--HEADER SECTION-->
+
+
     <div class="header">
       <p class="tertiary" data-aos="zoom-in">Welcome To</p>
       <h1 class="primary" data-aos="fade-right">WoreWo</h1>
@@ -45,6 +54,10 @@
         <a class="btn" href="#services">EXPLORE</a>
       </div>
     </div>
+
+    <!--SERVICES SECTION-->
+
+
     <div class="end-design"></div>
     <div class="services" id="services">
       <h1 class="secondary bold" data-aos="slide-up">Services</h1>
@@ -65,7 +78,7 @@
           <p class="font" data-aos="fade-out">Our online courses provide you with an affordable and flexible way to learn new skills and study new and emerging topics. Learn from popular authors and industry experts at no cost to you.
             <br>We offer highly paid courses for free. Join our <a href="#contact">Newsletter</a> for free.
           </p>
-          <a class="btn" href="./courses/courses.html">DOWNLOAD</a>
+          <a class="btn" href="./courses/index.html">DOWNLOAD</a>
         </div>
       </div>
       <div class="effect-hor content-margin" data-aos="flip-left">
@@ -73,7 +86,7 @@
         <div class="effect-ver">
           <h1 class="sub-heading heading-margin" data-aos="fade-in">Free Ebooks</h1>
           <p class="font " data-aos="fade-out">Best source for free eBook downloads, eBook resources & eBook authors. download eBooks for Free: anytime! anywhere!</p>
-          <a class="btn" href="./ebooks/ebooks.html">DOWNLOAD</a>
+          <a class="btn" href="./ebooks/index.html">DOWNLOAD</a>
         </div>
       </div>
       <div class="effect-hor content-margin" data-aos="flip-left">
@@ -81,7 +94,7 @@
         <div class="effect-ver">
           <h1 class="sub-heading heading-margin" data-aos="fade-in">Mod APK</h1>
           <p class="font " data-aos="fade-out">WoreWO focus on providing 100% working mods for game and app fans. Join WoreWo and pick the 100% working mod for you..</p>
-          <a class="btn" href="./apks/apks.html">DOWNLOAD</a>
+          <a class="btn" href="./apks/index.html">DOWNLOAD</a>
         </div>
       </div>        
     </div>
@@ -128,13 +141,14 @@
         <label for="" class="form__label">Email</label>
       </div>
       <div class="form__group">
-          <input type="submit" class="btn" value="JOIN NOW">
+          <input type="submit" class="btn" value="JOIN NOW" id="form_submit">
+           
       </div>
       
     </form>
     <p class="font " data-aos="fade-in" style="text-align: center;">After clicking join now button you will receive an email confirmation.<br>
       If you not receive the confirmation mail please check you spam or promotion option in your mail.</p>
-    <p class="notify" data-aos="fade-in" id="mailto">FOR QUERIES : <i>worewoedu@gmail.com</i></p>
+    <p class="notify" data-aos="fade-in">FOR QUERIES : <i>worewoedu@gmail.com</i></p>
     </div>
     <div class="end-design"></div>
     <div class="footer">
@@ -144,16 +158,16 @@
           <h1 class="footer-heading" style="text-decoration: underline;">Quick Links</h1>
           <ul class="footer-text" type="None">
             <li><a href="./coupons/index.html"><i class="fas fa-external-link-alt"></i>&nbsp;&nbsp;Free Udemy Coupons</a></li>
-            <li><a href="./courses/courses.html"><i class="fas fa-external-link-alt"></i>&nbsp;&nbsp;Free Courses</a></li>
-            <li><a href="./ebooks/ebooks.html"><i class="fas fa-external-link-alt"></i>&nbsp;&nbsp;Free Ebooks</a></li>
-            <li><a href="./apks/apks.html"><i class="fas fa-external-link-alt"></i>&nbsp;&nbsp;Mod APK</a></li>
+            <li><a href="./courses/index.html"><i class="fas fa-external-link-alt"></i>&nbsp;&nbsp;Free Courses</a></li>
+            <li><a href="./ebooks/index.html"><i class="fas fa-external-link-alt"></i>&nbsp;&nbsp;Free Ebooks</a></li>
+            <li><a href="./apks/index.html"><i class="fas fa-external-link-alt"></i>&nbsp;&nbsp;Mod APK</a></li>
             <li><a href="#about"><i class="fas fa-external-link-alt"></i>&nbsp;&nbsp;About US</a></li>
           </ul>
         </div>
         <div>
           <h1 class="footer-heading" style="text-decoration: underline;">Contact US</h1>
           <ul class="footer-text" type="None">
-            <li id="mailto"><i class="fas fa-envelope-open-text" ></i>&nbsp;&nbsp;worewoedu@gmail.com</li>
+            <li><i class="fas fa-envelope-open-text"></i>&nbsp;&nbsp;worewoedu@gmail.com</li>
             <li><a href="#"><i class="fas fa-globe"></i>&nbsp;&nbsp;www.worewo.cf</a></li>
         </div>
       </div>

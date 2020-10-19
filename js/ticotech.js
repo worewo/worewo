@@ -1,4 +1,4 @@
-AOS.init({ duration: 1200, })
+AOS.init({duration:1200,})
 
 var app = document.getElementById('app');
 
@@ -15,26 +15,3 @@ typewriter.typeString('Information')
     .typeString('Technology')
     .pauseFor(2500)
     .start();
-
-
-//----------- mail link ------------ //
-var mail = document.getElementById('mailto');
-
-mail.onclick = function () {
-    window.location.href = "mailto:worewoedu@gmail.com";
-}
-
-//----------- backtohome link ------------ //
-var backtohome = document.getElementById('backtohomepage');
-
-backtohome.onclick = function () {
-
-    window.location.href = "https://worewo.cf";
-}
-
-//----------- backtocontactus link ------------ //
-var backtocontact = document.getElementById('backtocontactus');
-
-backtocontact.onclick = function () {
-    window.location.href = "https://worewo.cf#contact";
-}

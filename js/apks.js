@@ -1,3 +1,5 @@
+AOS.init({duration:1200,})
+
 var tasks = [{
     "apkTitle": "KineMaster-Pro 4.12.3.15162 Stabiron",
     "apkLink": 'https://matix.li/45828b28b7a2',
@@ -48,30 +50,30 @@ let cardContainer;
 let createTaskCard = (task) => {
 
     let card = document.createElement('div');
-    card.className = 'card col-lg-3 col-md-4 col-sm shadow-lg mr-5 ml-5 mt-5 mb-2 img-thumbnaill text-center cursor-pointer rounded';
+    card.className = 'cards';
+    card.setAttribute("data-aos", "flip-left");
 
-    let cardBody = document.createElement('div');
-    cardBody.className = 'card-body';
- 
+    //let cardBody = document.createElement('div');
+    //cardBody.className = 'card-body';
+
     let cardImage = document.createElement('img');
-    cardImage.className = 'card-img-top img-thumbnail rounded';
+    cardImage.className = "cards-image";
     cardImage.src = task.apkImgSrc;
 
 
-    let title = document.createElement('h4');
+    let title = document.createElement('h1');
     title.innerText = task.apkTitle;
-    title.className = 'card-title mt-5 text-capitalize';
+    title.className = 'cards-text';
 
 
     let button1 = document.createElement('a');
-    button1.className = 'btn btn-own mt-4 mb-2 text-uppercase';
+    button1.className = 'cards-button';
     button1.innerText = task.button;
     button1.href = task.apkLink;
 
-    cardBody.appendChild(cardImage);
-    cardBody.appendChild(title);
-    cardBody.appendChild(button1);
-    card.appendChild(cardBody);
+    card.appendChild(cardImage);
+    card.appendChild(title);
+    card.appendChild(button1);
     cardContainer.appendChild(card);
 
 }
