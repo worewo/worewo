@@ -601,6 +601,6 @@ body{
   font-size: 1.5rem;
 }
 iframe{
-  /* width: 100%; */
-  min-height: auto;
+  width: 100% !important;
+  height: fit-content;
 }
