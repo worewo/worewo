@@ -52,7 +52,7 @@ let createTaskCard = (task) => {
 
     let cardBody = document.createElement('div');
     cardBody.className = 'card-body';
-
+ 
     let cardImage = document.createElement('img');
     cardImage.className = 'card-img-top img-thumbnail rounded';
     cardImage.src = task.apkImgSrc;
