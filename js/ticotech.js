@@ -29,12 +29,12 @@ var backtohome = document.getElementById('backtohomepage');
 
 backtohome.onclick = function () {
 
-    window.location.href = "../index.html";
+    window.location.href = "https://worewo.cf";
 }
 
 //----------- backtocontactus link ------------ //
 var backtocontact = document.getElementById('backtocontactus');
 
 backtocontact.onclick = function () {
-    window.location.href = "../index.html#contact";
+    window.location.href = "https://worewo.cf#contact";
 }
